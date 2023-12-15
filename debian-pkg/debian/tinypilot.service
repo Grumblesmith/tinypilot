@@ -10,6 +10,7 @@ User=tinypilot
 WorkingDirectory=/opt/tinypilot
 ExecStart=/opt/tinypilot/venv/bin/python app/main.py
 Environment=APP_SETTINGS_FILE=/home/tinypilot/app_settings.cfg
+Environment=PATH=/opt/tinypilot/venv/bin
 Restart=always
 
 [Install]
