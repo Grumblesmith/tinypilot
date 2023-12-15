@@ -2,7 +2,7 @@
 # Enable here-documents:
 # https://github.com/moby/buildkit/blob/master/frontend/dockerfile/docs/syntax.md#here-documents
 
-FROM debian:bullseye-20220328-slim AS build
+FROM debian:bookworm-20231120-slim AS build
 
 RUN set -exu && \
     apt-get update && \
@@ -85,7 +85,7 @@ EOF
 
 RUN set -exu && \
     cat >changelog <<EOF
-tinypilot (${PKG_VERSION}) bullseye; urgency=medium
+tinypilot (${PKG_VERSION}) bookworm; urgency=medium
 
   * Latest TinyPilot release.
 
